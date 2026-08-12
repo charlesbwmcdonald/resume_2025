@@ -336,6 +336,36 @@
 }
 </style>
 
+
+<style>
+/* Keep the designed logical pages, but make the Page 3 transition print cleanly. */
+@media print {
+  /* Page 3 must begin on a fresh physical sheet. */
+  #page-3 {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  /* Keep the continuation header with the content that follows it. */
+  #page-3 .continuation-header {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  #page-3 .body-grid {
+    break-before: avoid !important;
+    page-break-before: avoid !important;
+  }
+}
+
+/* Screen preview: give Page 3 a little extra separation so the intended break is obvious. */
+@media screen {
+  #page-3 {
+    margin-top: 30px;
+  }
+}
+</style>
+
 </head>
 <body>
 
