@@ -15,8 +15,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
+            color: #303438;
+            background: #F3F3F1;
         }
 
         .resume {
@@ -28,20 +28,20 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #e74c3c 0%, #34495e 50%, #3498db 100%);
+            background: #20262B;
             color: white;
-            padding: 40px 40px 30px 40px;
+            padding: 38px 40px 28px 40px;
             position: relative;
         }
 
         .header::before {
             content: '';
             position: absolute;
-            top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0,0,0,0.1);
+            height: 5px;
+            background: #C75B32;
         }
 
         .header-content {
@@ -53,7 +53,7 @@
             font-size: 2.5em;
             font-weight: 700;
             margin-bottom: 5px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: none;
         }
 
         .title {
@@ -83,9 +83,9 @@
         }
 
         .sidebar {
-            background: #f8f9fa;
+            background: #F3F3F1;
             padding: 30px 25px;
-            border-right: 3px solid #e74c3c;
+            border-right: 3px solid #C75B32;
         }
 
         .content {
@@ -99,10 +99,10 @@
         .section-title {
             font-size: 1.4em;
             font-weight: 700;
-            color: #34495e;
+            color: #20262B;
             margin-bottom: 15px;
             padding-bottom: 8px;
-            border-bottom: 2px solid #3498db;
+            border-bottom: 2px solid #66727A;
             position: relative;
         }
 
@@ -113,7 +113,7 @@
             left: 0;
             width: 30px;
             height: 2px;
-            background: #e74c3c;
+            background: #C75B32;
         }
 
         .sidebar .section-title {
@@ -147,20 +147,20 @@
         .job-title {
             font-size: 1.15em;
             font-weight: 700;
-            color: #34495e;
+            color: #20262B;
         }
 
         .company {
             font-size: 1.05em;
             font-weight: 600;
-            color: #e74c3c;
+            color: #C75B32;
             margin-bottom: 3px;
         }
 
         .job-period {
             font-size: 0.9em;
             color: #666;
-            background: #f8f9fa;
+            background: #F3F3F1;
             padding: 4px 12px;
             border-radius: 15px;
             border: 1px solid #ddd;
@@ -183,10 +183,10 @@
         }
 
         .achievement {
-            background: linear-gradient(90deg, rgba(52, 152, 219, 0.1) 0%, rgba(231, 76, 60, 0.1) 100%);
+            background: #F3F3F1;
             padding: 8px 12px;
             margin: 8px 0;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #C75B32;
             border-radius: 4px;
             font-weight: 500;
         }
@@ -206,7 +206,7 @@
 
         .skill-category-title {
             font-weight: 700;
-            color: #34495e;
+            color: #20262B;
             margin-bottom: 8px;
             font-size: 0.95em;
         }
@@ -229,7 +229,7 @@
             content: "•";
             position: absolute;
             left: 0;
-            color: #e74c3c;
+            color: #C75B32;
             font-weight: bold;
         }
 
@@ -249,14 +249,14 @@
         }
 
         .highlight {
-            color: #e74c3c;
+            color: #C75B32;
             font-weight: 600;
         }
 
         @media print {
             body { background: white; }
             .resume { box-shadow: none; margin: 0; }
-            .header { background: #34495e !important; }
+            .header { background: #20262B !important; }
         }
 
         @media (max-width: 768px) {
@@ -276,6 +276,32 @@
         @media print {
             .skill-category { break-inside: avoid; }
             .job { break-inside: avoid; }
+        }
+
+        .sidebar {
+            background: #F3F3F1;
+        }
+
+        .skill-category {
+            background: #FFFFFF;
+            border: 1px solid #D8DCDE;
+            box-shadow: none;
+        }
+
+        .certifications li {
+            border: 1px solid #D8DCDE;
+            box-shadow: none;
+        }
+
+        .job-period {
+            background: #F3F3F1;
+            border: 1px solid #D8DCDE;
+            color: #66727A;
+        }
+
+        .summary,
+        .job-description {
+            color: #4A5054;
         }
 </style>
 </head>
