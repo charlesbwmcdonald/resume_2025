@@ -366,6 +366,41 @@
 }
 </style>
 
+<style>
+/* PRINT PAGINATION FIX: each logical .page prints on its own Letter sheet. */
+@media print {
+  html, body {
+    width: 8.5in !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+
+  .page {
+    width: 8.5in !important;
+    min-height: 11in !important;
+    height: 11in !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    overflow: hidden !important;
+    break-after: page !important;
+    page-break-after: always !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  #page-2, #page-3 {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  .page:last-child {
+    break-after: auto !important;
+    page-break-after: auto !important;
+  }
+}
+</style>
+
 </head>
 <body>
 
